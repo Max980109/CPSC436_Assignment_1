@@ -30,12 +30,7 @@ function initialize_message() {
 
 function clear_list() {
     var message_list = document.getElementById("message_list");
-    var child = message_list.childNodes;
-    if (child) {
-        for (c of child) {
-            message_list.remove(c);
-        };
-    };
+    message_list.innerHTML = null;
 };
 
 function clear_message() {
