@@ -14,12 +14,14 @@
         <li class="nav_item"><a href="contact.html">Contact</a></li>
     </ul>
     <form id="text_messages" onsubmit="submit_message();return false">
-        <textarea id="messages" rows="5" cols="50" placeholder="Type your message here !"></textarea>
-        <input type="submit" value="Submit">
-        <input type="button" value="Clear" onclick="clear_message()">
+        <textarea id="messages" placeholder="Type your message here !"></textarea>
+        <input class="text_button" type="submit" value="Submit">
+        <input class="text_button" type="button" value="Clear" onclick="clear_message()">
     </form>
-    <ul id="message_list" ></ul>
-    <button onclick="clear_list()">Clear List</button>
+    <div id = "message_container">
+        <ul id="message_list" ></ul>
+    </div>
+    <button id = "clear_list" onclick="clear_list()">Clear List</button>
 </body>
 
 </html>

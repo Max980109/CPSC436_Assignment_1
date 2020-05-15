@@ -7,6 +7,7 @@ function submit_message() {
     var element = document.createElement("li");
     element.innerHTML = text;
     if (text !== "") {
+        element.className = "message_box"
         message_list.appendChild(element);
         var delete_button = create_delete_button();
         element.appendChild(delete_button);
@@ -22,6 +23,7 @@ function initialize_message() {
     for (m of js_list) {
         var element = document.createElement("li");
         element.innerHTML = m;
+        element.className = "message_box";
         message_list.appendChild(element);
         var delete_button = create_delete_button();
         element.appendChild(delete_button);
