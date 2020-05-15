@@ -1,0 +1,44 @@
+body {
+    font-family: monospace, Arial, Helvetica;
+    margin: 0;
+}
+
+#nav_bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.nav_item {
+    float: left;
+}
+
+a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+a:hover:not(.active) {
+    background-color: #111111;
+}
+
+.active {
+    background-color: skyblue;
+}
+
+
+
+
+
+
+
+
+
+
